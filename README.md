@@ -24,3 +24,7 @@ Then add **hubot-shipit** to your `external-scripts.json`:
 user1>> hubot ship it
 hubot>> https://img.skitch.com/20111026-r2wsngtu4jftwxmsytdke6arwd.png
 ```
+
+## NPM Module
+
+https://www.npmjs.com/package/hubot-shipit
