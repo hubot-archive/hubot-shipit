@@ -17,17 +17,17 @@
 #   maddox
 
 squirrels = [
-  "http://i.imgur.com/RLQpXfX.png",
-  "http://i.imgur.com/sA1h34D.jpg",
-  "http://i.imgur.com/DEnnA6m.jpg",
-  "http://i.imgur.com/oHJIlXI.jpg",
-  "http://i.imgur.com/DPVM1.png",
-  "http://i.imgur.com/BVpkdrU.jpg",
-  "http://i.imgur.com/NSanWiX.jpg",
-  "http://i.imgur.com/TEVqIZQ.jpg",
-  "http://i.imgur.com/mUuDkyK.jpg",
-  "http://i.imgur.com/ERCNrhd.jpg",
-  "http://i.imgur.com/nxMZSJi.png"
+  "https://i.imgur.com/RLQpXfX.png",
+  "https://i.imgur.com/sA1h34D.jpg",
+  "https://i.imgur.com/DEnnA6m.jpg",
+  "https://i.imgur.com/oHJIlXI.jpg",
+  "https://i.imgur.com/DPVM1.png",
+  "https://i.imgur.com/BVpkdrU.jpg",
+  "https://i.imgur.com/NSanWiX.jpg",
+  "https://i.imgur.com/TEVqIZQ.jpg",
+  "https://i.imgur.com/mUuDkyK.jpg",
+  "https://i.imgur.com/ERCNrhd.jpg",
+  "https://i.imgur.com/nxMZSJi.png"
 ]
 
 module.exports = (robot) ->
