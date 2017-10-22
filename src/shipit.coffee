@@ -27,8 +27,7 @@ squirrels = [
   "https://i.imgur.com/TEVqIZQ.jpg",
   "https://i.imgur.com/mUuDkyK.jpg",
   "https://i.imgur.com/ERCNrhd.jpg",
-  "https://i.imgur.com/nxMZSJi.png",
-  "https://i.imgur.com/Srms6yk.png"
+  "https://i.imgur.com/nxMZSJi.png"
 ]
 
 module.exports = (robot) ->
