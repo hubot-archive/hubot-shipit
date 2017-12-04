@@ -1,22 +1,22 @@
-# Description:
-#   Rodent Motivation
-#
-#   Set the environment variable HUBOT_SHIP_EXTRA_SQUIRRELS (to anything)
-#   for additional motivation
-#
-# Dependencies:
-#   None
-#
-# Configuration:
-#   HUBOT_SHIP_EXTRA_SQUIRRELS
-#
-# Commands:
-#   ship it - Display a motivation squirrel
-#
-# Author:
-#   maddox
+// Description:
+//   Rodent Motivation
+//
+//   Set the environment variable HUBOT_SHIP_EXTRA_SQUIRRELS (to anything)
+//   for additional motivation
+//
+// Dependencies:
+//   None
+//
+// Configuration:
+//   HUBOT_SHIP_EXTRA_SQUIRRELS
+//
+// Commands:
+//   ship it - Display a motivation squirrel
+//
+// Author:
+//   maddox
 
-squirrels = [
+const squirrels = [
   "http://shipitsquirrel.github.io/images/ship%20it%20squirrel.png",
   "http://images.cheezburger.com/completestore/2011/11/2/aa83c0c4-2123-4bd3-8097-966c9461b30c.jpg",
   "http://images.cheezburger.com/completestore/2011/11/2/46e81db3-bead-4e2e-a157-8edd0339192f.jpg",
@@ -31,15 +31,17 @@ squirrels = [
   "http://1.bp.blogspot.com/_v0neUj-VDa4/TFBEbqFQcII/AAAAAAAAFBU/E8kPNmF1h1E/s640/squirrelbacca-thumb.jpg",
   "https://dl.dropboxusercontent.com/u/602885/github/soldier-squirrel.jpg",
   "https://dl.dropboxusercontent.com/u/602885/github/squirrelmobster.jpeg",
-]
+];
 
-module.exports = (robot) ->
+module.exports = function(robot) {
 
-  # Enable a looser regex if environment variable is set
-  if process.env.HUBOT_SHIP_EXTRA_SQUIRRELS
-    regex = /\bship(ping|z|s|ped)?\s*it\b/i
-  else
-    regex = /\bship\s*it\b/i
+  // Enable a looser regex if environment variable is set
+  let regex;
+  if (process.env.HUBOT_SHIP_EXTRA_SQUIRRELS) {
+    regex = /\bship(ping|z|s|ped)?\s*it\b/i;
+  } else {
+    regex = /\bship\s*it\b/i;
+  }
 
-  robot.hear regex, (msg) ->
-    msg.send msg.random squirrels
+  return robot.hear(regex, msg => msg.send(msg.random(squirrels)));
+};
